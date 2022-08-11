@@ -10,20 +10,39 @@
 .box-about {
 	color: #fff;
 	padding: 45px 0 180px 0;
+	@media (max-width: 767px) {
+		padding: 32px 0;
+	}
 }
 .txt-about {
 	margin-bottom: 55px;
+	@media (max-width: 767px) {
+		margin-bottom: 32px;
+	}
 	h1 {
 		font-size: 128px;
 	    line-height: 1.2;
 	    color: #FFFFFF;
 	    text-shadow: 1.76405px 1.76405px 17.6404px #3063e7;
 	    font-weight: 900;
+		@media (max-width: 1440px) {
+			font-size: 100px;
+		}
+		@media (max-width: 767px) {
+			font-size: 50px;
+			margin-bottom: 10px;
+		}
 	}
 	h5 {
 		font-size: 33px;
 	    text-transform: uppercase;
 	    font-weight: 300;
+		@media (max-width: 1440px) {
+			font-size: 26px;
+		}
+		@media (max-width: 767px) {
+			font-size: 16px;
+		}
 	    span {
 	    	font-weight: 700;
 	    	color: #FF532E;
@@ -35,6 +54,12 @@
 		font-size: 32px;
 		font-weight: 700;
 		margin-bottom: 17px;
+		@media (max-width: 1440px) {
+			font-size: 26px;
+		}
+		@media (max-width: 767px) {
+			font-size: 22px;
+		}
 	}
 }
 .left-about {
@@ -45,15 +70,28 @@
 		font-size: 24px;
 		font-weight: 600;
 		margin-bottom: 19px;
+		@media (max-width: 1440px) {
+			font-size: 20px;
+		}
+		@media (max-width: 767px) {
+			font-size: 18px;
+		}
 	}
 }
 .box-strengs {
 	padding: 64px 0 0 0;
+	@media (max-width: 767px) {
+		padding: 32px 0 0 0;
+	}
 }
 .number-about {
 	max-width: 300px;
     margin: 0 auto;
     font-size: 18px;
+	@media (max-width: 767px) {
+		max-width: 100%;
+		padding-top: 24px;
+	}
     ul {
     	list-style: none;
     	li {
@@ -74,6 +112,9 @@
 	h2 {
 		font-size: 32px;
 		font-weight: 700;
+		@media (max-width: 767px) {
+			font-size: 26px;
+		}
 	}
 }
 .list-our {
@@ -87,20 +128,174 @@
 			font-size: 24px;
 		    font-weight: 700;
 		    margin-bottom: 5px;
+			@media (max-width: 767px) {
+				font-size: 18px;
+			}
 		}
 	}
 }
 
 .list-partner {
 	.row {
+		@media (max-width: 575px) {
+			margin: 0 -7px;
+		}
 		.col-md-2 {
 			flex: 0 0 20%;
 			max-width: 20%;
 			padding: 20px;
+			@media (max-width: 575px) {
+				padding: 7px;
+			}
 		}
 	}
 }
 
 .box-partner {
 	padding: 138px 0 ;
+	@media (max-width: 767px) {
+		padding: 48px 0;
+	}
+}
+
+.content-prd {
+	height: 600px;
+	background: #2E2E2E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+	@media (max-width: 767px) {
+		height: 320px;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			margin-right: 22px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+.txt-prd {
+	h3 {
+		font-size: 36px;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 12px;
+		@media (max-width: 767px) {
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+	}
+	a {
+		font-size: 24px;
+		font-weight: 500;
+		color: #fff;
+		background: #FF532E;
+		display: inline-flex;
+		line-height: initial;
+		padding: 5px 15px;
+		border: 1px solid #FF532E;
+		@media (max-width: 767px) {
+			font-size: 16px;
+		}
+		&:hover {
+			color: #FF532E;
+			background: #fff;
+		}
+	}
+}
+.slide-prd {
+	margin: 0- 15px;
+	.slick-track {
+		display: flex;
+	}
+	.item-slide {
+		padding: 0 15px;
+	}
+}
+.item-prd {
+	height: 100%;
+	position: relative;
+	&:after {
+		content: "";
+		background: linear-gradient(180deg, rgba(217, 217, 217, 0) 3.44%, #FFFFFF 58.85%);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.info {
+		padding: 0 20px 20px 20px;
+		position: relative;
+		z-index: 2;
+		margin-top: -30px;
+		@media (max-width: 1200px) {
+			padding: 0 10px 20px 10px;
+		}
+		ul {
+			padding-left: 24px;
+			font-size: 16px;
+		}
+		h3 {
+			font-size: 20px;
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+	}
+}
+.our-solution {
+	padding: 90px 0 0 0;
+	@media (max-width: 767px) {
+		padding: 32px 0 0 0;
+	}
+	.title {
+		margin-bottom: 55px;
+		@media (max-width: 767px) {
+			margin-bottom: 25px;
+		}
+	}
+}
+.slide-solution {
+	margin: 0 -7px;
+	.item-slide {
+		padding: 0 7px;
+	}
+}
+
+.item-solution{
+	position: relative;
+	.info {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		text-align: center;
+		padding: 10px;
+		color: #fff;
+		background: rgba(0, 0, 0, 0.25);
+		h3 {
+			font-size: 24px;
+			font-weight: 700;
+			@media (max-width: 1200px) {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.our-partner {
+	padding: 90px 0;
+	@media (max-width: 767px) {
+		padding: 32px 0;
+	}
 }
