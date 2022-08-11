@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+// @import "./fonts.scss";
+$font: 'FontAwesome';
+$black: #000000;
+$yellow: #FDDF4F;
+$blue: #008A50;
+$red: #f44336;
+html {
+    overflow-x: hidden;
+}
+body {  
+    box-sizing: border-box;
+    color: #2E2E2E;
+    background: #E5E5E5;
+    padding: 0 !important;
+    font-size: 15px;
+    transition: .3s all;
+    position: relative;
+    font-family: 'SVN-Gilroy';
+
+    h1, 
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p, 
+    label,
+    ul,
+    li, 
+    .card,
+    a {
+        text-decoration: none !important;
+        transition: .2s all;
+        margin-bottom: 0;
+        outline: none !important;
+    }
+
+    a {
+        transition: .3s all !important;
+        color:#2E2E2E;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    input,
+    button {
+        outline: none !important;
+        box-shadow: none;
+        transition: .3s all;
+    }
+
+    .slick-slide {
+        height: auto;
+
+        img {
+            display: inline;
+        }
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1400px;
+        @media (max-width: 1023px) {
+            padding: 0 40px;
+        }
+        @media (max-width: 767px) {
+            padding: 0 24px;
+        }
+    }  
+
+    .container-fluid {
+        padding: 0 100px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .slick-slider {
+        margin-bottom: 0;
+    }
+}
